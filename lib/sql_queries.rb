@@ -21,3 +21,7 @@ end
 def selects_most_prominent_color_and_returns_with_count
   "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY COUNT(*) DESC LIMIT 1;"
 end
+
+def counts_number_of_bears_wiht_goofy_temperaments
+  "SELECT COUNT(*) FROM bears WHERE temperament = 'goofy'"
+end
